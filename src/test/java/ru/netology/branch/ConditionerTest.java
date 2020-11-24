@@ -14,7 +14,7 @@ class ConditionerTest {
         assertEquals(24, conditioner.getMaxTemperature());
         conditioner.setCurrentTemperature(24);
         assertEquals(24, conditioner.getCurrentTemperature());
-        conditioner.IncreaseCurrentTemperature(24);
+        conditioner.increaseCurrentTemperature();
         assertEquals(25, conditioner.getIncreaseCurrentTemperature());
     }
 

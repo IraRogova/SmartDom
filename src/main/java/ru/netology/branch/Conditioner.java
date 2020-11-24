@@ -1,6 +1,14 @@
 package ru.netology.branch;
 
 public class Conditioner {
+
+    private int currentTemperature;
+    private boolean on;
+    private String name;
+    private int maxTemperature = 25;
+    private int minTemperature = 9;
+
+
     public String getName() {
         return name;
     }
@@ -8,8 +16,6 @@ public class Conditioner {
     public void setName(String name) {
         this.name = name;
     }
-
-    private String name;
 
     public int getMaxTemperature() {
         return maxTemperature;
@@ -27,8 +33,6 @@ public class Conditioner {
         this.minTemperature = minTemperature;
     }
 
-    private int maxTemperature = 25;
-    private int minTemperature = 9;
 
     public int getCurrentTemperature() {
         return currentTemperature;
@@ -44,14 +48,7 @@ public class Conditioner {
         this.currentTemperature = currentTemperature;
     }
 
-    private int currentTemperature;
-    private boolean on;
-    public int increaseCurrentTemperature;
-    public int decreaseCurrentTemperature;
-
-
-
-    public void IncreaseCurrentTemperature(int increaseCurrentTemperature) {
+    public void increaseCurrentTemperature() {
 
         if (currentTemperature < maxTemperature) {
 
@@ -60,12 +57,9 @@ public class Conditioner {
         this.currentTemperature = currentTemperature +1;
     }
 
-
-
     public int getIncreaseCurrentTemperature() {
         return currentTemperature;
     }
-
 
 
     public void decreaseCurrentTemperature() {

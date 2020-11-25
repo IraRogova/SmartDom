@@ -41,7 +41,7 @@ class ConditionerTest {
 
     }
 
-  /*  @Test
+  @Test
     public void shouldCheckChangeTemperature() {
         Conditioner conditioner = new Conditioner();
         String expected = "Кондишн";
@@ -50,7 +50,7 @@ class ConditionerTest {
         conditioner.setCurrentTemperature(-20);
         assertEquals(0, conditioner.getCurrentTemperature());
 
-    }*/
+    }
 
 
 }
